@@ -22,7 +22,7 @@ npm install handlercord
 
 ## Getting Started
 
-Check out the [documentation](https://github.com) for detailed usage instructions and examples to get started quickly.
+Check out the [documentation](https://github.com/Aidan-The-Dev/handlercord/blob/main/README.md) for detailed usage instructions and examples to get started quickly.
 
 ## Usage
 
@@ -60,7 +60,7 @@ module.exports = {
         description: 'Pong!'
     },
   
-    run: ({ interaction }) => {
+    execute: ({ interaction }) => {
       interaction.reply('Pong!')
     },
   }
@@ -80,4 +80,4 @@ module.exports = (client) => {
 ```
 
 ## License
-This project is licensed under the Apache 2.0 License - see the LICENSE file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/Aidan-The-Dev/handlercord/blob/main/LICENSE) file for details.
