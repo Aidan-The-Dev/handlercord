@@ -1,14 +1,14 @@
 {
-  "name": "discord-handler",
+  "name": "handlercord",
   "version": "1.0.0",
-  "description": "discord-handler: Simplify Discord bot development with command and event handling.",
+  "description": "handlercord: Simplify Discord bot development with command and event handling.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aidan-The-Dev/discord-handler"
+    "url": "https://github.com/Aidan-The-Dev/handlercord"
   },
   "keywords": [
     "discord",
