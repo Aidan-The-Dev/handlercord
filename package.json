@@ -1,0 +1,28 @@
+{
+  "name": "discord-handler",
+  "version": "1.0.0",
+  "description": "discord-handler: Simplify Discord bot development with command and event handling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aidan-The-Dev/discord-handler"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "djs",
+    "handler",
+    "handlers"
+  ],
+  "author": "aidanthedev",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@discordjs/rest": "^2.0.1",
+    "cli-table3": "^0.6.3",
+    "discord-api-types": "^0.37.56",
+    "discord.js": "^13.16.0"
+  }
+}
