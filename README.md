@@ -1,6 +1,6 @@
 # handlercord
 
-![GitHub License](https://img.shields.io/github/license/Aidan-The-Dev/handlercord)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![npm Version](https://img.shields.io/npm/v/handlercord)
 
 Simplify your Discord bot development with the `handlercord` package. This package provides a streamlined way to manage commands, events, and interactions for your Discord bot, making it easier to create and maintain a feature-rich bot.
