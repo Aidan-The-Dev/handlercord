@@ -1,6 +1,6 @@
 # discord-handler
 
-![GitHub License](https://img.shields.io/github/license/your-username/discord-handler)
+![GitHub License](https://img.shields.io/github/license/Aidan-The-Dev/discord-handler)
 ![npm Version](https://img.shields.io/npm/v/discord-handler)
 
 Simplify your Discord bot development with the `discord-handler` package. This package provides a streamlined way to manage commands, events, and interactions for your Discord bot, making it easier to create and maintain a feature-rich bot.
