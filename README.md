@@ -1,9 +1,9 @@
-# discord-handler
+# handlercord
 
-![GitHub License](https://img.shields.io/github/license/Aidan-The-Dev/discord-handler)
-![npm Version](https://img.shields.io/npm/v/discord-handler)
+![GitHub License](https://img.shields.io/github/license/Aidan-The-Dev/handlercord)
+![npm Version](https://img.shields.io/npm/v/handlercord)
 
-Simplify your Discord bot development with the `discord-handler` package. This package provides a streamlined way to manage commands, events, and interactions for your Discord bot, making it easier to create and maintain a feature-rich bot.
+Simplify your Discord bot development with the `handlercord` package. This package provides a streamlined way to manage commands, events, and interactions for your Discord bot, making it easier to create and maintain a feature-rich bot.
 
 ## Features
 
@@ -14,10 +14,10 @@ Simplify your Discord bot development with the `discord-handler` package. This p
 
 ## Installation
 
-You can install `discord-handler` via npm:
+You can install `handlercord` via npm:
 
 ```bash
-npm install discord-handler
+npm install handlercord
 ```
 
 ## Getting Started
@@ -26,11 +26,11 @@ Check out the [documentation](https://github.com) for detailed usage instruction
 
 ## Usage
 
-Here's a simple example of how to use discord-handler to create a basic Discord bot:
+Here's a simple example of how to use handlercord to create a basic Discord bot:
 
 ```javascript
 const { Client, Intents } = require('discord.js')
-const { Handler } = require('discord-handler')
+const { Handler } = require('handlercord')
 
 const client = new Client({
     intents: [
@@ -74,7 +74,7 @@ To create an event make a new file in your events folder
 module.exports = (client) => {
     client.once('ready', () => {
         console.log(`${client.user.tag} is online.`)
-    client.user.setActivity('discord-handler', {type: 'PLAYING'})
+    client.user.setActivity('handlercord', {type: 'PLAYING'})
     })
   }
 ```
