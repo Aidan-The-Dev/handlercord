@@ -30,7 +30,8 @@ Here's a simple example of how to use handlercord to create a basic Discord bot:
 
 ```javascript
 const { Client, Intents } = require('discord.js')
-const { Handler } = require('handlercord')
+const Handler = require('handlercord')
+const path = require('path')
 
 const client = new Client({
     intents: [
@@ -40,8 +41,8 @@ const client = new Client({
 })
 const handler = new Handler({
   client,
-  commandsPath: './commands',
-  eventsPath: './events',
+  commandsPath: path.join(__dirname, 'commands'),
+  eventsPath: path.join(__dirname, 'events'),
 })
 
 handler.start()
