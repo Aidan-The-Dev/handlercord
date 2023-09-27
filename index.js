@@ -11,6 +11,7 @@ class Handler {
     this.commandsPath = commandsPath
     this.eventsPath = eventsPath
     this.commands = new Collection()
+    this.register = register
   }
 
   async loadCommands() {
@@ -80,10 +81,17 @@ class Handler {
     const rest = new REST({ version: 10 }).setToken(this.client.token)
 
     try {
-      await rest.put(
-        Routes.applicationCommands(this.client.user.id),
-        { body: commands },
-      )
+      if(this.register === 'GLOBAL') {
+        await rest.put(
+          Routes.applicationCommands(this.client.user.id),
+          { body: commands },
+        )
+      } else if(typeof this.register === 'string') {
+        await rest.put(
+          Routes.applicationGuildCommands(this.client.user.id, this.register),
+          { body: commands },
+        )
+      }
 
       commands.forEach(command => {
         const rowIndex = statusTable.findIndex(row => row[0] === command.name)
