@@ -6,12 +6,12 @@ const { Routes } = require('discord-api-types/v9')
 const Table = require('cli-table3')
 
 class Handler {
-  constructor({ client, commandsPath, eventsPath }) {
+  constructor({ client, commandsPath, eventsPath, register }) {
     this.client = client
     this.commandsPath = commandsPath
     this.eventsPath = eventsPath
-    this.commands = new Collection()
     this.register = register
+    this.commands = new Collection()
   }
 
   async loadCommands() {
